@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+:root {
+    --colorheading1heading2: hsl(234, 12%, 34%);
+    --colorunderheading: hsl(229, 6%, 66%);
+    --colorsupervisor: hsl(234, 12%, 34%);
+    --colorblockheadings: hsl(234, 12%, 34%);
+    --backgroundcolor: hsl(0, 0%, 98%);
+    --blockscolor: white;
+    --supervisortopbordercolor: hsl(180, 62%, 55%);
+    --colorblockp: hsl(229, 6%, 66%); 
+    --supervisortopborder: hsl(180, 62%, 55%);
+    --teambuildertopborder: hsl(0, 78%, 62%);
+    --karmatopborder: hsl(34, 97%, 64%);
+    --calculatortopborder: hsl(212, 86%, 64%);
+}
+
+body {
+    font-family: "Poppins",sans-serif;
+    font-size: 15px;
+    background-color: var(--backgroundcolor);
+}
+
+.top {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*top*/
+
+.heading1 {
+    color: var(--colorheading1heading2);
+    font-size: 36px;
+    font-weight: 90;
+    margin-bottom: -2.5rem;
+}
+
+.heading2 {
+    color: var(--colorheading1heading2);
+    font-size: 36px;
+    font-weight: bolder;
+    margin-bottom: 0rem;
+}
+
+.underheading {
+    width: 500px;
+    color: var(--colorunderheading); 
+}
+
+/*down*/
+
+.down {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+/*supervisor*/
+
+.supervisor {
+    width: 300px;
+    height: 220px;
+    border: 1px solid var(--blockscolor);
+    border-radius: 0.5rem;
+    background-color: var(--blockscolor);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    padding: 2rem; 
+    padding-top: 1rem;
+    margin-right: 2rem;
+}
+
+.supervisor::after {
+    content: "";
+    background-color: var(--supervisortopborder);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 5px;
+    width: 100%;
+}
+
+.supervisorh {
+    color: var(--colorblockheadings);
+    font-weight: bolder;
+    font-size: 20px;
+    margin-bottom: -0.3rem;
+}
+
+.supervisorp {
+    color: var(--colorblockp);
+    margin-bottom: 3rem;
+}
+
+.down img {
+    display: block;
+    margin-left: auto;
+}
+
+/*teambuilder*/
+
+.teambuilder {
+    width: 300px;
+    height: 220px;
+    border: 1px solid var(--blockscolor);
+    border-radius: 0.5rem;
+    background-color: var(--blockscolor);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    padding: 2rem;
+    padding-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.teambuilder::after {
+    content: "";
+    background-color: var(--teambuildertopborder);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 5px;
+    width: 100%;
+}
+
+.teambuilderh {
+    color: var(--colorblockheadings);
+    font-weight: bolder;
+    font-size: 20px;
+    margin-bottom: -0.3rem;
+}
+
+.teambuilderp {
+    color: var(--colorblockp);
+    margin-bottom: 3rem;
+}
+
+/*karma*/
+
+.karma {
+    width: 300px;
+    height: 220px;
+    border: 1px solid var(--blockscolor);
+    border-radius: 0.5rem;
+    background-color: var(--blockscolor);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    padding: 2rem;
+    padding-top: 1rem;
+}
+
+.karma::after {
+    content: "";
+    background-color: var(--karmatopborder);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 5px;
+    width: 100%;
+}
+
+.karmah {
+    color: var(--colorblockheadings);
+    font-weight: bolder;
+    font-size: 20px;
+    margin-bottom: -0.3rem;
+}
+
+.karmap {
+    color: var(--colorblockp);
+    margin-bottom: 3rem;
+}
+
+/*calculator*/
+
+.calculator {
+    width: 300px;
+    height: 220px;
+    border: 1px solid var(--blockscolor);
+    border-radius: 0.5rem;
+    background-color: var(--blockscolor);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    padding: 2rem;
+    padding-top: 1rem;
+    margin-left: 2rem;
+}
+
+.calculator::after {
+    content: "";
+    background-color: var(--calculatortopborder);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 5px;
+    width: 100%;
+}
+
+.calculatorh {
+    color: var(--colorblockheadings);
+    font-weight: bolder;
+    font-size: 20px;
+    margin-bottom: -0.3rem;
+}
+
+.calculatorp {
+    color: var(--colorblockp);
+    margin-bottom: 3rem;
+}
+
+/*attribution*/
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+   color: hsl(228, 45%, 44%); 
+}
